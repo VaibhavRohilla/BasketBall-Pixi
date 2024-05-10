@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,user-scalable=no,initial-scale=1, minimum-scale=0,maximum-scale=2 viewport-fit=cover" />
+
+    <link rel="icon" href="./favicon.png" sizes="any"><!-- 32×32 -->
+    <!-- <link rel="icon" href="./icon.svg" type="image/svg+xml"> -->
+    <link rel="apple-touch-icon" href="./favicon.png"> <!-- 180×180 -->
+    <link rel="manifest" href="./manifest.webmanifest">
+
+</head>
+<style>
+    @font-face {
+        font-family: "FredokaOne";
+        src: url("./fonts/FredokaOne-Regular.ttf");
+    }
+
+    body {
+        background-color: #000;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+
+    <div id="parentDiv">
+
+
+        <!-- Game Over Panel-->
+
+        <div class="container responsive" id="gameOverPanel" style="display: none;">
+            <div class="card-1 row ">
+                <div class="card-header col-3 col-s-3 menu">
+                    <h1 class="heading1"><strong class="text-center">Game Over</strong></h1>
+                    <h3 class="heading2" style="margin-bottom: 0px;">Select you ball</h3>
+                </div>
+                <div class="card-body col-12">
+                    <div class="container row block" id="ballsParent">
+
+                        <div id="ballsList">
+                        </div>
+
+
+
+                        <!-- <a class="prev" id="prevBtn"><button  class="btn btn-primary">❮</button></a>
+                    <a class="next" id="nextBtn"><button  class="btn btn-primary">❯</button></a> -->
+                        <img id="prevBtn"></img>
+                        <img id="nextBtn"></img>
+                    </div>
+
+                    <!-- <button class="middle">
+                        <h2><strong>Share BasketBall FVFR</strong></h2>
+                        <P>iNVITE YOUR FRIENDS ?</P>
+                    </button> -->
+                    <div class="user-info">
+                        <button class="favorite-styled cursor" id="playBtn" type="button">
+                            Play
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quest Panel-->
+        <div class="main" id="questPanel" style="display: none;">
+            <div class="card">
+                <div>
+                    <h1 class="heading1" id="score-points"></h1>
+                    <h3 id="subHead">Complete goals to unlock price</h3>
+                </div>
+                <div id="cardParents" class="card_image">
+                </div>
+                <div class="card_content">
+                    <button class="btn card_btn deactiveBtn" id="continueBtn">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mascotDiv">
+        <div id="mascot">
+            <img src="" alt="">
+        </div>
+
+        <div id="mascotMsgDiv">
+            <p id="mascotMsg">
+
+            </p>
+        </div>
+    </div>
+
+    <script src="helpBridge.js"></script>
+
+</body>
+
+</html>
