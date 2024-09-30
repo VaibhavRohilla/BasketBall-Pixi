@@ -87,7 +87,7 @@ export const LoaderSoundConfig: any = {
 	ui_click: require("../sounds/ui_menu_button_click_07.mp3"),
 	ui_scroll: require("../sounds/ui_menu_button_scroll_03.mp3"),
 	perfectPoint: require("../sounds/onX2points_1.mp3"),
-	loseSound: require("../sounds/lose Sound.mp3"),
+	loseSound: require("../sounds/Lose Sound.mp3"),
 	winSound: require("../sounds/Win Sound.mp3"),
 	bgMusic: require("../sounds/bgMusic.mp3"),
 	ballColHoop: require("../sounds/ball-collide-hoop.mp3"),
